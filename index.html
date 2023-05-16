@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../notes-reminder-app/css/reset.css" />
+        <link rel="stylesheet" href="../notes-reminder-app/css/style.css" />
+        <script src="../notes-reminder-app/main.js"></script>
+        <title>Reminder-App.com</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <select name="" id="">
+                    <option value="">#Work</option>
+                </select>
+                <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </nav>
+        </header>
+        <main>
+            <section class="task-list-and-inputs-wrapper">
+                <section class="tasks-list-wrapper">
+                    <h3 class="task-label">#Work</h3>
+                    <div class="tasks-list-container">
+                        <div class="task">
+                            <input type="checkbox" />
+                            <p class="task-description">discuss MVP implementation 9-10 <span class="filter-label">#work</span></p>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" />
+                            <p class="task-description">present updates to stakeholders</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="tasks-input-container">
+                    <h4>Task</h4>
+                    <form action="">
+                        <!-- input 1 -->
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input class="task-name" type="text" />
+                        </div>
+                        <!-- input 2 -->
+                        <div class="input-container">
+                            <label for="date">Date</label>
+                            <input type="date" />
+                        </div>
+                        <!-- input 3 -->
+                        <div class="input-container">
+                            <label for="label">Label</label>
+                            <input type="text" />
+                        </div>
+                        <!-- input 4 -->
+                        <div class="input-container">
+                            <label for="note">Note</label>
+                            <textarea name="note-input" class="notes-input" cols="20" rows="10"></textarea>
+                        </div>
+                        <div class="task-options">
+                            <button class="edit-button"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <div class="right-side-options-container">
+                                <button class="cancel-button">Cancel</button>
+                                <button class="done-button">Done</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
